@@ -1,0 +1,30 @@
+.card__info{
+    display: flex;
+    background-color:  #062226;
+    max-Width: 90%;
+    gap: 1em;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px 100px ;
+}
+
+.card__info__ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 3em;
+}
+
+.card__info-list,.card__info-name{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+.card__info-name{
+    font-size: 18px;
+}

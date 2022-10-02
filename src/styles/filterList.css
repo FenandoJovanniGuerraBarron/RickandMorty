@@ -1,0 +1,29 @@
+.list__ul {
+    margin: auto;
+    width: 300px;
+    background-color: #062226;
+    max-height: 105px;
+    overflow-y: scroll;
+    overscroll-behavior-y: auto;
+    position: absolute;
+    text-align: center;
+    margin: 10px 0px;
+    border-radius: 20px;
+    border: white 1px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    transform: translateY(-10px);
+}
+
+.list__ul::-webkit-scrollbar {
+    display: none;
+}
+
+.list__ul li{
+    cursor: pointer;
+}
+
+.list__ul li:hover{
+    opacity: 0.5;
+}
