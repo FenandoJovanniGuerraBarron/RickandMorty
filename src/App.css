@@ -37,13 +37,13 @@
     -webkit-text-stroke: 0.1px rgb(116, 139, 57);
     color: #3fabc0;
     font-family: Get Schwifty Font;
-    font-size: 60px;
+    font-size: 54px;
     font-weight: 900;
 }
 
 .input {
     height: 30px;
-    width: 300px;
+    width: 270px;
     border-radius: 10px;
     border: none;
 }
