@@ -1,8 +1,11 @@
 import React from 'react'
 import '../styles/filterList.css'
 
-const FilterList = ({ nameLocation,setInputSearch }) => {
-const handleClick=id=> setInputSearch(id)
+const FilterList = ({ nameLocation,setInputSearch,emptyInput }) => {
+const handleClick=id=> {
+    setInputSearch(id)
+    emptyInput()
+}
 
     return (
         <ul className='list__ul' >

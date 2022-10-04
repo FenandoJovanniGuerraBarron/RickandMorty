@@ -22,6 +22,8 @@ function App() {
   const handleSubmit = e => {
     e.preventDefault()
     setInputSearch(e.target.locationId.value)
+    setNameLocation()
+    e.target.locationId.value=""
   }
 
   const handleChange = e => {
@@ -35,6 +37,12 @@ return setNameLocation()
 }
   }
 
+const emptyInput=()=>{
+  locationId.value=""
+  setNameLocation()
+}
+
+
   return (
     <div className="App">
       <div className='header' >
@@ -42,10 +50,10 @@ return setNameLocation()
           Rick and Morty</h1>
       <form onSubmit={handleSubmit}  >
         <input
-        autocomplete='off'
         className='input'
           id='locationId'
           type="text"
+          autoComplete='off'
           placeholder='Enter a number from 1 to 126 or Dimension '
           onChange={handleChange}
         />
@@ -53,6 +61,7 @@ return setNameLocation()
               <FilterList
       setInputSearch={setInputSearch}
       nameLocation={nameLocation}
+      emptyInput={ emptyInput}
       />
       </form></div>
       
